@@ -5,8 +5,8 @@ import sys
 import io
 import os
 
-from persian_tools import digits, ordinal_suffix, bill
-from persian_tools.bank import card_number, sheba, exceptions
+with atheris.instrument_imports():
+    from persian_tools import digits, ordinal_suffix
 
 @atheris.instrument_func
 def TestOneInput(data):
@@ -30,5 +30,5 @@ def TestOneInput(data):
 
 
 atheris.Setup(sys.argv, TestOneInput)
-atheris.instrument_all()
+# atheris.instrument_all()
 atheris.Fuzz()
