@@ -1,0 +1,6 @@
+project: py-persian-tools
+target: persian_tools_fuzz
+
+cmds:
+    - cmd: /py-persian-tools/fuzz/persian_tools_fuzz.py
+      libfuzzer: true
