@@ -1,4 +1,5 @@
-FROM python:3.8-bullseye
+FROM python:3.11-bookworm
+RUN apt-get update && apt-get install -y clang
 RUN pip3 install atheris
 
 COPY . /py-persian-tools
